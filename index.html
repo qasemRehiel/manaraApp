@@ -21,7 +21,7 @@
     database.ref('reports/'+code).get().then((snapshot) => {
         var html = snapshot.val();
         if(html != null){
-            document.body.innerHTML = html;
+            $('#content').html(html);
         }else{
             document.body.innerHTML = ('مستند غير موجود');
         }
