@@ -28,6 +28,7 @@
         var html = snapshot.val();
         if(html != null){
             $('#content').html(html);
+            print();
         }else{
             document.body.innerHTML = ('مستند غير موجود');
         }
